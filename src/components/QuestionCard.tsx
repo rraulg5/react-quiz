@@ -1,15 +1,15 @@
 import React from 'react';
-import { AnswerObject } from '../App';
+import { AnswerObject } from '../types/AnswerObject';
 import { Wrapper, ButtonWrapper } from './QuestionCard.styles';
 
-type Props = {
+interface Props {
   question: string;
   answers: string[];
   callback: (e: React.MouseEvent<HTMLButtonElement>) => void;
   userAnswer: AnswerObject | undefined;
   questionNmb: number;
   totalQuestions: number;
-};
+}
 
 export const QuestionCard: React.FC<Props> = ({
   question,
