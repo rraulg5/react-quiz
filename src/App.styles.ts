@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
   }
 `;
@@ -31,20 +31,27 @@ export const Wrapper = styled.div`
   }
 
   .score {
-    color: #444;
+    color: #fff;
+    font-family: Rubik;
     font-size: 2rem;
     margin: 0;
+    background: #3e5c75;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    padding: 10px 50px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
   }
 
   h1 {
     font-family: Rubik;
-    color: #2980b9;
+    color: #3e5c76;
 
     font-weight: 400;
     background-size: 100%;
     background-clip: text;
 
-    font-size: 70px;
+    font-size: 3.5rem;
     text-align: center;
     margin: 20px;
   }
@@ -53,10 +60,11 @@ export const Wrapper = styled.div`
   .next {
     cursor: pointer;
     color: #fff;
-    background: #1a5276;
-    border: 2px solid #2471a3;
+    background: #538ec2;
+    border: 2px solid #3e5c76;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    font-size: 1.2rem;
     height: 40px;
     margin: 20px 0;
     padding: 0 40px;
