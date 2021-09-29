@@ -33,12 +33,12 @@ export const Wrapper = styled.div`
   .score {
     color: #fff;
     font-family: Rubik;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0;
     background: #3e5c75;
     border-radius: 10px;
     border: 2px solid #fff;
-    padding: 10px 50px;
+    padding: 10px 70px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     text-align: center;
   }
@@ -51,7 +51,7 @@ export const Wrapper = styled.div`
     background-size: 100%;
     background-clip: text;
 
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
     margin: 20px;
   }
@@ -66,11 +66,12 @@ export const Wrapper = styled.div`
     border-radius: 10px;
     font-size: 1.2rem;
     height: 40px;
-    margin: 20px 0;
+    margin-top: 20px;
     padding: 0 40px;
   }
 
   .start {
     max-width: 200px;
+    margin-bottom: 20px;
   }
 `;

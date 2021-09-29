@@ -34,6 +34,15 @@ export const Quiz = () => {
 
         {!gameOver ? <p className="score">Score: {score}</p> : null}
 
+        {!gameOver &&
+          !loading &&
+          userAnswers.length === number + 1 &&
+          number !== TOTAL_QUESTIONS - 1 && (
+            <button className="next" onClick={nextQuestion}>
+              Next Question
+            </button>
+          )}
+
         {!loading && !gameOver && (
           <QuestionCard
             questionNmb={number + 1}
@@ -44,15 +53,6 @@ export const Quiz = () => {
             callback={checkAnswer}
           />
         )}
-
-        {!gameOver &&
-          !loading &&
-          userAnswers.length === number + 1 &&
-          number !== TOTAL_QUESTIONS - 1 && (
-            <button className="next" onClick={nextQuestion}>
-              Next Question
-            </button>
-          )}
       </Wrapper>
     </>
   );
